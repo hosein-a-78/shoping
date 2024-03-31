@@ -14,9 +14,9 @@ const ProductsProvider = ({ children }) => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                // const response = await api.get("/products");
+                const response = await api.get("/products");
                 // tamiz shodan code
-                setProducts(await api.get("/products"));
+                setProducts(response);
 
             } catch (error) {
                 console.log(error.message);
