@@ -2,7 +2,7 @@ import React from 'react';
 import { createQueryObject } from '../helpers/helper';
 //Icons
 import { ImSearch } from "react-icons/im";
-
+import styles from './SearchBox.module.css';
 const SearchBox = ({ search, setSearch, setQuery }) => {
 
     const clickHandler = () => {
@@ -10,7 +10,7 @@ const SearchBox = ({ search, setSearch, setQuery }) => {
     };
 
     return (
-        <div>
+        <div className={styles.search}>
             <input
                 type="text"
                 placeholder="Search..."
